@@ -1,0 +1,36 @@
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select panelClass="sort-select" [(ngModel)]="sort">
+      <mat-option value="name">Name</mat-option>
+      <mat-option value="-released">Released</mat-option>
+      <mat-option value="-added">Added</mat-option>
+      <mat-option value="-created">Created</mat-option>
+      <mat-option value="-updated">Updated</mat-option>
+      <mat-option value="-rating">Rating</mat-option>
+      <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="games">
+  <div class="game">
+    <div class="game-thumb-container">
+      <img
+        src="https://images.ctfassets.net/umhrp0op95v1/S3yKwaVAOi8Bgqg4n4scf/adae769671b271b88f97d31721432986/LA_LOGO.png"
+        alt="thumbnail"
+        class="game-thumbnail"
+      />
+    </div>
+    <div class="game-description">
+      <p class="game-name">Name</p>
+      <div class="game-platforms">
+        <img
+          class="game-platform"
+          src="https://www.creativefabrica.com/wp-content/uploads/2019/03/Monogram-PC-Logo-Design-by-Greenlines-Studios.jpg"
+          alt="slug"
+        />
+      </div>
+    </div>
+  </div>
+</div>
